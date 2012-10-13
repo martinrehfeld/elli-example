@@ -1,0 +1,25 @@
+## Name of the node
+-sname elli_example
+
+## Cookie for distributed erlang
+-setcookie elli_example
+
+## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
+## (Disabled by default..use with caution!)
+##-heart
+
+## increase the maximum number of allowed processes inside the VM
++P 500000
+
+## Enable kernel poll and a async threads
++K true
++A 8
+
+## Log the warning log level as warning instead of error
++W w
+
+## Increase number of concurrent ports/sockets
+-env ERL_MAX_PORTS 8192
+
+## Tweak GC to run more often
+-env ERL_FULLSWEEP_AFTER 10

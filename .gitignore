@@ -1,0 +1,6 @@
+*.dump
+*.beam
+.eunit
+deps
+ebin
+/rel/elli_example

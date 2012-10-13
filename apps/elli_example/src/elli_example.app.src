@@ -1,0 +1,13 @@
+{application, elli_example,
+ [
+  {description, "Examle app for the Elli webserver"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  sasl
+                 ]},
+  {mod, {elli_example, []}},
+  {env, []}
+ ]}.
